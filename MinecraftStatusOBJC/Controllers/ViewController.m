@@ -65,6 +65,11 @@ NSString *motd;
         [tableView.refreshControl endRefreshing];
         [tableView reloadData];
         NSLog(@"reloaded");
+//        PopupViewController *vc = [[PopupViewController alloc] init];
+        PopupViewController *vc = [[PopupViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:^{
+            NSLog(@"Presented Vc");
+        }];
     });
 }
 

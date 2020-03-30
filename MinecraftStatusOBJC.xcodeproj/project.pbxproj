@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972FAFA824328FD2008439AF /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972FAFA724328FD2008439AF /* PopupViewController.swift */; };
 		9789146E2431929B0046FCF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9789146D2431929B0046FCF9 /* AppDelegate.m */; };
 		978914712431929B0046FCF9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 978914702431929B0046FCF9 /* SceneDelegate.m */; };
 		978914742431929B0046FCF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978914732431929B0046FCF9 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		972FAFA624328FD1008439AF /* MinecraftStatusOBJC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MinecraftStatusOBJC-Bridging-Header.h"; sourceTree = "<group>"; };
+		972FAFA724328FD2008439AF /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		978914692431929B0046FCF9 /* MinecraftStatusOBJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinecraftStatusOBJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9789146C2431929B0046FCF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9789146D2431929B0046FCF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 			children = (
 				978914722431929B0046FCF9 /* ViewController.h */,
 				978914732431929B0046FCF9 /* ViewController.m */,
+				972FAFA724328FD2008439AF /* PopupViewController.swift */,
+				972FAFA624328FD1008439AF /* MinecraftStatusOBJC-Bridging-Header.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				TargetAttributes = {
 					978914682431929B0046FCF9 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -190,6 +196,7 @@
 				9789147F2431929C0046FCF9 /* main.m in Sources */,
 				978914712431929B0046FCF9 /* SceneDelegate.m in Sources */,
 				9789148A2431A0830046FCF9 /* ServerHandler.m in Sources */,
+				972FAFA824328FD2008439AF /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V8VARWU3F;
 				INFOPLIST_FILE = MinecraftStatusOBJC/Info.plist;
@@ -338,6 +346,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.turnereison.MinecraftStatusOBJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MinecraftStatusOBJC/Controllers/MinecraftStatusOBJC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -346,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V8VARWU3F;
 				INFOPLIST_FILE = MinecraftStatusOBJC/Info.plist;
@@ -355,6 +367,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.turnereison.MinecraftStatusOBJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MinecraftStatusOBJC/Controllers/MinecraftStatusOBJC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

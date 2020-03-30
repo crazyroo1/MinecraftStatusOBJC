@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ServerHandler.h"
 #import "ServerDelegateProtocol.h"
+#import "MinecraftStatusOBJC-Swift.h"
 
 @interface ViewController : UIViewController
 
